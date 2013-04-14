@@ -1,5 +1,8 @@
 class App
   def call(env)
-    [status_code, headers, content]
+    content = "Hello World"
+    status_code = 200
+    headers = { "Content-Length" => content.length.to_s }
+    [status_code, headers, [content]]
   end
 end
