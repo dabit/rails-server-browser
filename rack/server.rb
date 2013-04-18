@@ -25,6 +25,7 @@ module Server
     end
 
     send_data response
+    close_connection true
   end
 end
 
