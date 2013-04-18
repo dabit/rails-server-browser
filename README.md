@@ -8,5 +8,4 @@ here.
 
 If you've seen this talk, please leave some feedback:
 
-<script src="http://speakerrate.com/talks/21651/widget.js" id="speakerrate-widget-21651"></script>
-
+[http://spkr8.com/t/21651](http://spkr8.com/t/21651)
