@@ -13,8 +13,18 @@ module Server
 
     status, headers, body = app.call(request.env)
 
-    puts headers
-    puts body
+    response = "HTTP/1.1 #{status} OK\r\n"
+
+    headers.each do |h,v|
+      response << "#{h}: #{v}\r\n"
+    end
+
+    response << "\r\n"
+    body.each do |b|
+      response << "#{b}\r\n"
+    end
+
+    send_data response
   end
 end
 
