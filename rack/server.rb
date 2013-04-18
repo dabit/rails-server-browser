@@ -2,12 +2,19 @@ $: << '.'
 
 require 'eventmachine'
 require 'thin'
+require 'app'
 
 module Server
   def receive_data(data)
     request = Thin::Request.new
     request.parse(data)
-    puts request.env
+
+    app = App.new
+
+    status, headers, body = app.call(request.env)
+
+    puts headers
+    puts body
   end
 end
 
