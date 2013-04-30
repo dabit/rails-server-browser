@@ -3,8 +3,8 @@
 This repo has the sample code that I use in my talk *From Rails to the Webserver
 to the Browser*.
 
-As soon as the slides are online or a video of the talk I will paste a link
-here.
+You can find the slides here:
+[https://speakerdeck.com/dabit/from-rails-to-the-webserver-to-the-browser](https://speakerdeck.com/dabit/from-rails-to-the-webserver-to-the-browser)
 
 If you've seen this talk, please leave some feedback:
 
